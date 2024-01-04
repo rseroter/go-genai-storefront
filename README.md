@@ -4,7 +4,7 @@ This is an example Go app that uses generative AI (Google's Gemini model) to pro
 
 ## Blog post about this sample app
 
-Read about the [app here](https://seroter.com/).
+Read about the [app here](https://seroter.com/2024/01/04/make-any-catalog-driven-app-more-personalized-to-your-users-how-i-used-generative-ai-coding-tools-to-improve-a-go-app-with-gemini/).
 
 ## How to try it
 - Clone the repo
