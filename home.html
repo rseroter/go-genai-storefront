@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" style="margin-top:20px">
+        <div class="row d-flex justify-content-center" >
+            <form id="form1" action="/" method="POST">
+                <div class="row" style="margin-bottom:20px">
+                    <div class="col-6">
+                        <div class="form-group">
+                        <label for="dropdown1"><strong>Record Type</strong></label>
+                        <select class="form-select" name="recordtype" id="recordtype">
+                            <option {{if eq .RecordType "property"}}selected{{end}} value="property">real estate</option>
+                            <option {{if eq .RecordType "restaurant"}}selected{{end}} value="restaurant">food menu</option>
+                            <option {{if eq .RecordType "store"}}selected{{end}} value="store">retail store</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                        <label for="dropdown2"><strong>Persona</strong></label>
+                        <select class="form-select" name="person" id="person">
+                            <option {{if eq .Person "person1"}}selected{{end}} value="person1">person 1</option>
+                            <option {{if eq .Person "person2"}}selected{{end}} value="person2">person 2</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row d-flex justify-content-center" >
+            {{ range $index, $record := .Records }}
+            <div class="col-md-4 mb-3">
+                <div class="card border-secondary">
+                    <img src="{{ $record.ImageURL }}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $record.Name }}</h5>
+                        <p class="card-text">{{ $record.Description }}</p>
+                        <a href="/details?recordtype={{ $.RecordType }}&id={{ $record.ID }}&person={{ $.Person }}" class="card-link">details</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("recordtype").addEventListener("change", function() {
+            document.getElementById("form1").submit();
+        });
+        document.getElementById("person").addEventListener("change", function() {
+            document.getElementById("form1").submit();
+        });
+    </script>
+</body>
+</html>
+

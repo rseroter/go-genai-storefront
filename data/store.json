@@ -1,0 +1,20 @@
+[
+    {
+        "ID": 1,
+        "Name": "VV-T149 Road Bike for Men 54cm Frame Bicycle",
+        "Description": "This red bike can be used to ride comfortably in the city. The 700C wheels offer a high-speed experience of a road bike. You can easily change the gears and enjoy the speed excitement with 21 speed shifter which ensures total control in every situation.",
+        "ImageURL": "images/store1.png"
+    },
+    {
+        "ID": 2,
+        "Name": "Large Clear Glass Vase for Flowers,Classic Hand Blown Glass Vase for Table",
+        "Description": "Add a touch of classic and stylish elegance to your dining table or setting with this gorgeously designed glass vase. The ribbed glass design enhances the beauty of flowers, creating an enchanting and captivating display.",
+        "ImageURL": "images/store2.png"
+    },
+    {
+        "ID": 3,
+        "Name": "Blue Couch Throw Pillow Covers 18x18 Inch",
+        "Description": "Quality Material Cushion Pillow: Our throw pillow covers are made with 100% Satin fabric. Super soft and durable, same solid blue color fabric used in both front and back. Our pillow covers are of good workmanship, they are tightly sewn without loose threads.",
+        "ImageURL": "images/store3.png"
+    }
+]

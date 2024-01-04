@@ -1,0 +1,20 @@
+[
+    {
+        "ID": 1,
+        "Name": "Charming family home in Rochester. $349,000.",
+        "Description": "3 bedroom , 2 bathroom house in upstate New York. Quiet neighborhood. Quality schools. Priced to sell.",
+        "ImageURL": "images/home1.png"
+    },
+    {
+        "ID": 2,
+        "Name": "Luxury living in South Florida. $895,000.",
+        "Description": "5 bedroom, 4 bathroom house in Miami Beach. Outdoor pool, gated community. Close to shopping centers. Pet friendly area.",
+        "ImageURL": "images/home2.png"
+    },
+    {
+        "ID": 3,
+        "Name": "Downtown city living in Atlanta. $410,000.",
+        "Description": "2 bedroom loft in Atlanta. 1 bathroom. 3rd floor of a modern building. Views of the city. Walking distance to parks and restaurants.",
+        "ImageURL": "images/home3.png"
+    }
+]

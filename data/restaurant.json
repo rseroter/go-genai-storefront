@@ -1,0 +1,20 @@
+[
+    {
+        "ID": 1,
+        "Name": "Vegetable Samosa",
+        "Description": "Lightly spiced Indian turnovers, stuffed potatoes and peas (2 pieces).",
+        "ImageURL": "images/food1.png"
+    },
+    {
+        "ID": 2,
+        "Name": "Seekh Kebab",
+        "Description": "Minced lamb mixed with exotic herbs and spices. Tandoored in clay oven.",
+        "ImageURL": "images/food2.png"
+    },
+    {
+        "ID": 3,
+        "Name": "Chicken Tikka Masala",
+        "Description": "Boneless piece of chicken breast, tandoored in clay oven and then blended in our curry sauce.",
+        "ImageURL": "images/food3.png"
+    }
+]
